@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="task-box">
+    <app-header (changeTaskStatus)="changeTaskStatus()"></app-header>
+    <app-tasks></app-tasks>
+    <ng-template [ngIf]="this.addTaskStatus === true">
+      <app-add-task (closePopUp)="changeTaskStatus()"></app-add-task>
+    </ng-template>
+  </div>
+</div>

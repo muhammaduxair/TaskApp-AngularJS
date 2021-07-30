@@ -1,0 +1,13 @@
+<span
+  class="task-item"
+  [ngStyle]="{ borderLeftColor: task.reminder ? 'green' : '#eeecec' }"
+  (dblclick)="toggleHandler(task)"
+>
+  <div class="first_box">
+    <h4>{{ task.text }}</h4>
+    <p>{{ task.day }}</p>
+  </div>
+  <div class="last_box">
+    <fa-icon [icon]="FaTimes" (click)="handleDelete(task)"></fa-icon>
+  </div>
+</span>

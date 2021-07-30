@@ -1,0 +1,23 @@
+<form (ngSubmit)="onSubmit()">
+  <span>
+    <fa-icon [icon]="FaTimes" (click)="closeAddTaskPopUP()"></fa-icon>
+  </span>
+  <label for="">
+    <p>Enter Text:</p>
+    <input type="text" name="text" [(ngModel)]="text" />
+  </label>
+  <label for="">
+    <p>Enter Day:</p>
+    <input type="text" name="day" [(ngModel)]="day" />
+  </label>
+  <label for="reminder" class="reminder">
+    Set Reminder
+    <input
+      type="checkbox"
+      name="reminder"
+      id="reminder"
+      [(ngModel)]="reminder"
+    />
+  </label>
+  <button type="submit">Add</button>
+</form>

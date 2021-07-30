@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+  align-items: center;
+}
+.header > h1 {
+  font-size: 40px;
+}
+.header > button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+.header > button:active {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}

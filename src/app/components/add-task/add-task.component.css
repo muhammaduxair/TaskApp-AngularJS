@@ -1,0 +1,55 @@
+form {
+  width: 80%;
+  height: fit-content;
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+form > span {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+form > span > fa-icon {
+  cursor: pointer;
+}
+form > label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+form > .reminder {
+  flex-direction: row;
+  align-items: center;
+}
+form > label p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+form > label input {
+  padding: 3px;
+  border: 2px solid #000;
+  font-size: 13px;
+  outline: none;
+}
+form > .reminder {
+  font-size: 14px;
+  font-weight: bold;
+  user-select: none;
+}
+form > .reminder > input {
+  margin-left: 5px;
+}
+form button {
+  width: 100%;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  outline: none;
+  padding: 7px 0;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
